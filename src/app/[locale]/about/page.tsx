@@ -11,7 +11,7 @@ export default function About() {
       <section className="max-w-4xl mx-auto">
         <h1 className="text-4xl font-bold mb-8 text-center">{t('title')}</h1>
         <GlassCard className="p-8 md:p-12">
-          <p className="text-lg leading-relaxed text-muted-foreground">
+          <p className="text-lg leading-relaxed text-muted-foreground whitespace-pre-line">
             {t('description')}
           </p>
         </GlassCard>

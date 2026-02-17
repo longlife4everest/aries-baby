@@ -1,5 +1,5 @@
-
 import { cn } from "@/lib/utils";
+import { Linkedin, Mail } from "lucide-react";
 
 export function Footer() {
   return (
@@ -9,9 +9,14 @@ export function Footer() {
           &copy; {new Date().getFullYear()} Isabella Christiani Rumbewas. All rights reserved.
         </p>
         <div className="flex items-center gap-6">
-          <a href="#" className="hover:text-accent transition-colors">LinkedIn</a>
-          <a href="#" className="hover:text-accent transition-colors">GitHub</a>
-          <a href="#" className="hover:text-accent transition-colors">Email</a>
+          <a href="https://www.linkedin.com/in/isabellachristianirumbewas-661201312/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-accent transition-colors">
+            <Linkedin size={16} />
+            <span>LinkedIn</span>
+          </a>
+          <a href="mailto:isabella.bbygirlxom@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors">
+            <Mail size={16} />
+            <span>Email</span>
+          </a>
         </div>
       </div>
     </footer>

@@ -21,7 +21,7 @@
 
 :root {
   /* Base colors */
-  --background: #F9F9F9;
+  --background: #FFFAFC;
   --foreground: #1A1A1A;
 
   /* Primary (Soft White / Light Silver) - Used for cards/sections */
@@ -41,25 +41,37 @@
   --card-border: rgba(255, 255, 255, 0.4);
 }
 
-@media (prefers-color-scheme: dark) {
-  /* Optional: If user wants dark mode, but prompt implies light/soft theme. 
-     Keeping minimal dark mode overrides or disabling if strictly light. 
-     The prompt asks for "Premium futuristic, soft tech, clean, elegant" with "Soft white" primary. 
-     I will stick to light mode as primary as requested, but valid CSS variables for potential dark mode.
-     For now making it identical or slightly adjusted for safety.
-  */
+
+
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
-    /* ... incomplete, sticking to light mode as per design spec for now */
   }
-}
+} */
 
 body {
-  background: var(--background);
   color: var(--foreground);
   font-family: var(--font-geist-sans);
   overflow-x: hidden;
+  position: relative;
+  background-color: var(--background);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url('/images/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.1; /* 10% opacity as requested */
+  filter: blur(0px); 
 }
 
 /* Custom Utilities */
@@ -72,8 +84,9 @@ body {
 }
 
 .text-gradient {
-  background: var(--image-gradient-soft-rose);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #000000; /* Solid Black as requested */
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: initial;
+  background-clip: unset;
 }

@@ -7,6 +7,10 @@ import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { CustomCursor } from "@/components/ui/CustomCursor";
+import { ScrollToTop } from "@/components/ui/ScrollToTop";
+import { NowPlaying } from "@/components/ui/NowPlaying";
+import { PageTransition } from "@/components/layout/PageTransition";
 import { routing } from '@/i18n/routing';
 
 const geistSans = Geist({
@@ -23,6 +27,9 @@ export const metadata: Metadata = {
   title: "Isabella Christiani Rumbewas",
   description: "Personal Branding Portfolio",
 };
+
+import { WeatherWidget } from "@/components/ui/WeatherWidget";
+import { Preloader } from "@/components/ui/Preloader";
 
 export default async function LocaleLayout({
   children,
@@ -46,10 +53,17 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}>
         <NextIntlClientProvider messages={messages}>
+          <Preloader />
+          <CustomCursor />
+          <ScrollToTop />
+          <NowPlaying />
+          <WeatherWidget />
           <div className="flex flex-col min-h-screen">
              <Navbar locale={locale} />
-             <main className="flex-grow pt-24">
-                {children}
+             <main className="flex-grow pt-20 pb-10">
+                <PageTransition>
+                  {children}
+                </PageTransition>
              </main>
              <Footer />
           </div>

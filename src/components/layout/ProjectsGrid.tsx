@@ -29,9 +29,7 @@ export function ProjectsGrid() {
                 <Code2 size={24} />
               </div>
               <div className="flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                <Button variant="ghost" size="sm" className="h-8 w-8 p-0 rounded-full">
-                  <Github size={16} />
-                </Button>
+
                 <Button variant="ghost" size="sm" className="h-8 w-8 p-0 rounded-full">
                   <ExternalLink size={16} />
                 </Button>

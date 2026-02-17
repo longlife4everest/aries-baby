@@ -18,7 +18,7 @@
   },
   "About": {
     "title": "About Me",
-    "description": "Information Systems student passionate about systems, data analytics, and logical thinking. Experienced in SQL, SDLC, Python, Java. Detail-oriented, structured, analytical mindset. Seeking growth in system analysis and data analytics."
+    "description": "I am an Information Systems student who has been interested in computers since I was young. I started to use computers a lot when I was in elementary school, and I later studied Software Engineering at SMK Telkom Purwokerto, where I learned basic programming.\n\nAt first, coding felt challenging, but over time I found it interesting because it requires logical thinking. I enjoy the process of solving problems and feel satisfied when the code finally works. I mainly use Python and Java, and I have also learned C#, PHP, and Flutter at a basic level.\n\nBesides coding, I enjoy analyzing problems, thinking about system flows, and writing reports or documentation. I am quite familiar with SQL querying using MySQL for managing and analyzing data. When working on tasks, I am usually calm and detail oriented. I may work a bit slowly because I focus on details, but I try to make sure the results are accurate.\n\nI learn new things quite quickly and can adapt to different people and environments. I am more quiet and observant, which helps me stay focused and responsible in my work. I am interested in System Analyst and Data Analyst roles, but I am also open to opportunities in programming.\n\nI am looking for a collaborative and structured environment where I can continue learning and growing. I believe in working quietly and letting the results speak for themselves."
   },
   "Experience": {
     "title": "Professional Experience",
@@ -49,7 +49,7 @@
       "agile": "Agile Project Management - HP LIFE",
       "data": "Intro to Data Analytics - RevoU",
       "google": "Google Analytics Certification",
-      "mis": "Management Information Systems",
+      "mis": "Klinikgo Health System Analyst Project Based Internship Program",
       "python": "PCAP Programming Essentials in Python"
     }
   },

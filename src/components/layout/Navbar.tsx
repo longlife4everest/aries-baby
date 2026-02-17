@@ -36,7 +36,6 @@ export function Navbar({ locale }: { locale: string }) {
     { href: "/experience", label: t("experience") },
     { href: "/certifications", label: t("certifications") },
     { href: "/projects", label: t("projects") },
-    { href: "/blog", label: t("blog") },
     { href: "/contact", label: t("contact") },
   ];
 
@@ -54,7 +53,7 @@ export function Navbar({ locale }: { locale: string }) {
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <Link href="/" className="text-2xl font-bold tracking-tight text-foreground transition-opacity hover:opacity-80">
-          <span className="text-gradient">Isabella</span>
+          <span className="text-gradient">My Profile</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -64,10 +63,17 @@ export function Navbar({ locale }: { locale: string }) {
               key={link.href}
               href={link.href}
               className={cn(
-                "text-sm font-medium transition-colors hover:text-accent",
-                pathname === link.href ? "text-accent" : "text-muted-foreground"
+                "relative px-3 py-1 text-sm font-medium transition-colors hover:text-accent",
+                pathname === link.href ? "text-accent-foreground" : "text-muted-foreground"
               )}
             >
+              {pathname === link.href && (
+                <motion.span
+                  layoutId="activeNavPill"
+                  className="absolute inset-0 bg-accent rounded-full -z-10"
+                  transition={{ type: "spring", stiffness: 350, damping: 30 }}
+                />
+              )}
               {link.label}
             </Link>
           ))}

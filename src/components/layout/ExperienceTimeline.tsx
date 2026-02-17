@@ -4,41 +4,61 @@
 import { useTranslations } from 'next-intl';
 import { motion } from "framer-motion";
 import { GlassCard } from "@/components/ui/GlassCard";
+import Image from "next/image";
 import { Briefcase } from "lucide-react";
 
 export function ExperienceTimeline() {
   const t = useTranslations('Experience.jobs');
   
   const jobs = [
-    { key: 'klinikgo', year: "2023" },
-    { key: 'jiu', year: "2022" },
-    { key: 'dinas', year: "2021" }
+    { key: 'klinikgo', year: "2023", image: "/images/experience/klinikgo-new.jpg" },
+    { key: 'jiu', year: "2022", image: "/images/experience/jiu-new.png" },
+    { key: 'dinas', year: "2021", image: "/images/experience/dinas-new.jpg" }
   ];
 
   return (
-    <div className="relative max-w-3xl mx-auto space-y-8 before:absolute before:inset-0 before:ml-5 before:h-full before:w-0.5 before:-translate-x-px before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
+    <div className="relative max-w-4xl mx-auto space-y-12">
       {jobs.map((job, index) => (
         <motion.div 
           key={job.key}
-          initial={{ opacity: 0, x: -20 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: index * 0.2 }}
-          className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active"
         >
-          <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
-            <Briefcase className="w-5 h-5 text-accent" />
-          </div>
-          
-          <GlassCard className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 ml-4 md:ml-0">
-            <div className="flex items-center justify-between space-x-2 mb-1">
-              <div className="font-bold text-slate-900">{t(`${job.key}.title`)}</div>
-              <time className="font-mono text-xs font-medium text-slate-500">{job.year}</time>
+          <GlassCard hoverEffect className="p-8">
+            <div className="flex flex-col md:flex-row md:items-start justify-between gap-6">
+               <div className="flex items-start gap-4">
+                 {job.image ? (
+                   <div className="w-16 h-16 flex-shrink-0 bg-white rounded-xl p-2 shadow-sm flex items-center justify-center overflow-hidden">
+                     <Image 
+                       src={job.image} 
+                       alt={t(`${job.key}.company`)}
+                       width={64}
+                       height={64}
+                       className="object-contain w-full h-full"
+                     />
+                   </div>
+                 ) : (
+                   <div className="p-3 bg-accent/10 rounded-xl text-accent">
+                     <Briefcase size={24} />
+                   </div>
+                 )}
+                 
+                 <div>
+                   <h3 className="text-xl font-bold text-foreground">{t(`${job.key}.title`)}</h3>
+                   <div className="text-accent font-medium mt-1">{t(`${job.key}.company`)}</div>
+                 </div>
+               </div>
+               
+              <span className="text-sm font-medium px-3 py-1 bg-secondary text-secondary-foreground rounded-full w-fit whitespace-nowrap">
+                {job.year}
+              </span>
             </div>
-            <div className="text-accent font-medium mb-2">{t(`${job.key}.company`)}</div>
-            <div className="text-slate-500">
+            
+            <p className="text-muted-foreground leading-relaxed mt-6 ml-0 md:ml-20">
               {t(`${job.key}.description`)}
-            </div>
+            </p>
           </GlassCard>
         </motion.div>
       ))}
