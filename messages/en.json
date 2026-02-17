@@ -1,0 +1,86 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "certifications": "Certifications",
+    "projects": "Projects",
+    "blog": "Blog",
+    "contact": "Contact",
+    "switcher": "ID"
+  },
+  "Hero": {
+    "title": "Isabella Christiani Rumbewas",
+    "subtitle": "Creative Personal Branding of Isabella Christiani Rumbewas",
+    "tagline": "Information Systems Student • System & Data Enthusiast",
+    "ctaProject": "View Projects",
+    "ctaBlog": "Read Blog"
+  },
+  "About": {
+    "title": "About Me",
+    "description": "Information Systems student passionate about systems, data analytics, and logical thinking. Experienced in SQL, SDLC, Python, Java. Detail-oriented, structured, analytical mindset. Seeking growth in system analysis and data analytics."
+  },
+  "Experience": {
+    "title": "Professional Experience",
+    "jobs": {
+      "klinikgo": {
+        "title": "System Analyst Intern",
+        "company": "Klinikgo",
+        "duration": "Duration", 
+        "description": "Analyzed system requirements and optimized workflow processes."
+      },
+      "jiu": {
+        "title": "Internal Control Unit",
+        "company": "Jakarta International University",
+        "duration": "Duration",
+        "description": "Monitored internal compliance and control systems."
+      },
+      "dinas": {
+        "title": "Archive Administration Intern",
+        "company": "Dinas Kearsipan",
+        "duration": "Duration",
+        "description": "Managed digital and physical archives improving accessibility."
+      }
+    }
+  },
+  "Certifications": {
+    "title": "Certifications & Awards",
+    "items": {
+      "agile": "Agile Project Management - HP LIFE",
+      "data": "Intro to Data Analytics - RevoU",
+      "google": "Google Analytics Certification",
+      "mis": "Management Information Systems",
+      "python": "PCAP Programming Essentials in Python"
+    }
+  },
+  "Projects": {
+    "title": "Featured Projects",
+    "items": {
+      "ariesbaby": {
+        "title": "AriesBaby - Personal Branding",
+        "description": "A premium personal branding website built with Next.js, Tailwind CSS, Framer Motion, and MDX. Designed to showcase experience, certifications, and blog content with a futuristic soft pink aesthetic.",
+        "tech": "Next.js, Tailwind, Framer Motion, MDX"
+      },
+      "chatgpt": {
+         "title": "AI Dashboard Prototype",
+         "description": "Energy optimization dashboard using AI to predict and recommend energy saving strategies.",
+         "tech": "Python, Streamlit, Pandas, Scikit-learn"
+      }
+    }
+  },
+  "Contact": {
+    "title": "Get in Touch",
+    "description": "Have a project in mind or want to collaborate? Feel free to reach out.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send Message",
+      "success": "Message sent!"
+    }
+  },
+  "Common": {
+    "readMore": "Read More",
+    "viewAll": "View All"
+  }
+}

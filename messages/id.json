@@ -1,0 +1,86 @@
+{
+  "Navigation": {
+    "home": "Beranda",
+    "about": "Tentang",
+    "experience": "Pengalaman",
+    "certifications": "Sertifikasi",
+    "projects": "Proyek",
+    "blog": "Blog",
+    "contact": "Kontak",
+    "switcher": "EN"
+  },
+  "Hero": {
+    "title": "Isabella Christiani Rumbewas",
+    "subtitle": "Personal Branding Kreatif Isabella Christiani Rumbewas",
+    "tagline": "Mahasiswa Sistem Informasi • Antusias Sistem & Data",
+    "ctaProject": "Lihat Proyek",
+    "ctaBlog": "Baca Blog"
+  },
+  "About": {
+    "title": "Tentang Saya",
+    "description": "Mahasiswa Sistem Informasi yang bersemangat tentang sistem, analitik data, dan pemikiran logis. Berpengalaman dalam SQL, SDLC, Python, Java. Berorientasi detail, terstruktur, pola pikir analitis. Mencari pertumbuhan dalam analisis sistem dan analitik data."
+  },
+  "Experience": {
+    "title": "Pengalaman Profesional",
+    "jobs": {
+      "klinikgo": {
+        "title": "Magang Analis Sistem",
+        "company": "Klinikgo",
+        "duration": "Durasi",
+        "description": "Menganalisis kebutuhan sistem dan mengoptimalkan proses alur kerja."
+      },
+      "jiu": {
+        "title": "Unit Pengendalian Internal",
+        "company": "Jakarta International University",
+        "duration": "Durasi",
+        "description": "Memantau kepatuhan internal dan sistem pengendalian."
+      },
+      "dinas": {
+        "title": "Magang Administrasi Arsip",
+        "company": "Dinas Kearsipan",
+        "duration": "Durasi",
+        "description": "Mengelola arsip digital dan fisik meningkatkan aksesibilitas."
+      }
+    }
+  },
+  "Certifications": {
+    "title": "Sertifikasi & Penghargaan",
+    "items": {
+      "agile": "Manajemen Proyek Agile - HP LIFE",
+      "data": "Pengantar Analitik Data - RevoU",
+      "google": "Sertifikasi Google Analytics",
+      "mis": "Sistem Informasi Manajemen",
+      "python": "Dasar Pemrograman PCAP dengan Python"
+    }
+  },
+  "Projects": {
+    "title": "Proyek Unggulan",
+    "items": {
+      "ariesbaby": {
+        "title": "AriesBaby - Personal Branding",
+        "description": "Situs web personal branding premium yang dibangun dengan Next.js, Tailwind CSS, Framer Motion, dan MDX. Dirancang untuk memamerkan pengalaman, sertifikasi, dan konten blog dengan estetika pink lembut yang futuristik.",
+        "tech": "Next.js, Tailwind, Framer Motion, MDX"
+      },
+      "chatgpt": {
+         "title": "Prototipe Dasbor AI",
+         "description": "Dasbor optimasi energi menggunakan AI untuk memprediksi dan merekomendasikan strategi penghematan energi.",
+         "tech": "Python, Streamlit, Pandas, Scikit-learn"
+      }
+    }
+  },
+  "Contact": {
+    "title": "Hubungi Saya",
+    "description": "Punya proyek atau ingin berkolaborasi? Jangan ragu untuk menghubungi.",
+    "form": {
+      "name": "Nama",
+      "email": "Email",
+      "message": "Pesan",
+      "submit": "Kirim Pesan",
+      "success": "Pesan terkirim!"
+    }
+  },
+  "Common": {
+    "readMore": "Baca Selengkapnya",
+    "viewAll": "Lihat Semua"
+  }
+}
