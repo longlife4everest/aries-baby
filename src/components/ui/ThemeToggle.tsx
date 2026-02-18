@@ -17,9 +17,9 @@ export function ThemeToggle() {
 
   if (!mounted) {
     return (
-        <Button variant="ghost" size="sm" className="rounded-full w-10 h-10 p-0 flex items-center justify-center">
-            <span className="sr-only">Toggle theme</span>
-        </Button>
+      <Button variant="ghost" size="sm" className="rounded-full w-10 h-10 p-0 flex items-center justify-center">
+        <span className="sr-only">Toggle theme</span>
+      </Button>
     )
   }
 
