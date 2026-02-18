@@ -74,10 +74,7 @@ export function Hero() {
             <a href="https://www.linkedin.com/in/isabellachristianirumbewas-661201312/" target="_blank" rel="noopener noreferrer" className="p-3 bg-white/50 hover:bg-white rounded-full transition-colors text-foreground hover:text-accent shadow-sm">
               <Linkedin size={24} />
             </a>
-            <a href="https://github.com/ariesbaby" target="_blank" rel="noopener noreferrer" className="p-3 bg-white/50 hover:bg-white rounded-full transition-colors text-foreground hover:text-accent shadow-sm">
-              <Github size={24} />
-            </a>
-            <a href="mailto:isabella.bbygirlxom@gmail.com" className="p-3 bg-white/50 hover:bg-white rounded-full transition-colors text-foreground hover:text-accent shadow-sm">
+            <a href="mailto:rumbewas.isabella@gmail.com" className="p-3 bg-white/50 hover:bg-white rounded-full transition-colors text-foreground hover:text-accent shadow-sm">
               <Mail size={24} />
             </a>
           </motion.div>
