@@ -28,7 +28,6 @@ export const metadata: Metadata = {
   description: "Personal Branding Portfolio",
 };
 
-import { WeatherWidget } from "@/components/ui/WeatherWidget";
 import { Preloader } from "@/components/ui/Preloader";
 
 export default async function LocaleLayout({
@@ -39,16 +38,16 @@ export default async function LocaleLayout({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  
+
   // Ensure that the incoming `locale` is valid
   if (!['en', 'id'].includes(locale as any)) {
     notFound();
   }
- 
+
   // Providing all messages to the client
   // side is the easiest way to get started
   const messages = await getMessages();
- 
+
   return (
     <html lang={locale}>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}>
@@ -56,16 +55,14 @@ export default async function LocaleLayout({
           <Preloader />
           <CustomCursor />
           <ScrollToTop />
-          <NowPlaying />
-          <WeatherWidget />
           <div className="flex flex-col min-h-screen">
-             <Navbar locale={locale} />
-             <main className="flex-grow pt-20 pb-10">
-                <PageTransition>
-                  {children}
-                </PageTransition>
-             </main>
-             <Footer />
+            <Navbar locale={locale} />
+            <main className="flex-grow pt-20 pb-10">
+              <PageTransition>
+                {children}
+              </PageTransition>
+            </main>
+            <Footer />
           </div>
         </NextIntlClientProvider>
       </body>

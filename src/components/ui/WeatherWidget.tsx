@@ -53,7 +53,7 @@ export function WeatherWidget() {
       initial={{ opacity: 0, x: -20 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ delay: 1.2 }}
-      className="fixed bottom-8 left-8 md:left-auto md:right-8 z-40 hidden md:flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 px-3 py-1.5 rounded-full shadow-lg"
+      className="fixed bottom-8 left-1/2 -translate-x-1/2 z-40 hidden md:flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 px-3 py-1.5 rounded-full shadow-lg"
     >
       {getWeatherIcon(weather.weatherCode)}
       <div className="flex flex-col text-[10px] leading-tight text-foreground/80">

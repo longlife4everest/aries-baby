@@ -10,47 +10,41 @@ import { Button } from "@/components/ui/Button";
 export function ProjectsGrid() {
   const t = useTranslations('Projects.items');
   const common = useTranslations('Common');
-  
+
   const projects = ['ariesbaby', 'chatgpt'];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-      {projects.map((project, index) => (
-        <motion.div
-          key={project}
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: index * 0.2 }}
-        >
-          <GlassCard hoverEffect className="h-full flex flex-col p-8 group">
-            <div className="flex items-center justify-between mb-4">
-              <div className="p-3 bg-accent/10 rounded-xl text-accent">
-                <Code2 size={24} />
-              </div>
-              <div className="flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+    <div className="flex flex-col items-center justify-center min-h-[40vh] text-center">
+      <motion.div
+        initial={{ scale: 0.8, opacity: 0 }}
+        whileInView={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+        className="relative"
+      >
+        <div className="absolute inset-0 bg-accent/20 blur-xl rounded-full" />
+        <div className="relative p-6 bg-accent/10 rounded-2xl border border-accent/20 mb-6">
+          <Code2 size={48} className="text-accent" />
+        </div>
+      </motion.div>
 
-                <Button variant="ghost" size="sm" className="h-8 w-8 p-0 rounded-full">
-                  <ExternalLink size={16} />
-                </Button>
-              </div>
-            </div>
-            
-            <h3 className="text-2xl font-bold mb-2">{t(`${project}.title`)}</h3>
-            <p className="text-muted-foreground mb-4 flex-grow">
-              {t(`${project}.description`)}
-            </p>
-            
-            <div className="flex flex-wrap gap-2 mt-4 pt-4 border-t border-gray-100/20">
-              {t(`${project}.tech`).split(',').map((tech) => (
-                <span key={tech} className="text-xs font-mono bg-secondary px-2 py-1 rounded-md text-secondary-foreground">
-                  {tech.trim()}
-                </span>
-              ))}
-            </div>
-          </GlassCard>
-        </motion.div>
-      ))}
+      <motion.h3
+        initial={{ y: 20, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.2 }}
+        className="text-2xl md:text-3xl font-bold mb-3"
+      >
+        Projects are in development
+      </motion.h3>
+
+      <motion.p
+        initial={{ y: 20, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.3 }}
+        className="text-muted-foreground max-w-md mx-auto"
+      >
+        I'm currently crafting something special. Check back soon for updates!
+      </motion.p>
     </div>
   );
 }
