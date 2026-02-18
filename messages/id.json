@@ -26,19 +26,19 @@
       "klinikgo": {
         "title": "Magang Analis Sistem",
         "company": "Klinikgo",
-        "duration": "Durasi",
+        "duration": "2025",
         "description": "Menganalisis kebutuhan sistem dan mengoptimalkan proses alur kerja."
       },
       "jiu": {
         "title": "Unit Pengendalian Internal",
         "company": "Jakarta International University",
-        "duration": "Durasi",
+        "duration": "2024",
         "description": "Memantau kepatuhan internal dan sistem pengendalian."
       },
       "dinas": {
         "title": "Magang Administrasi Arsip",
         "company": "Dinas Kearsipan",
-        "duration": "Durasi",
+        "duration": "2022",
         "description": "Mengelola arsip digital dan fisik meningkatkan aksesibilitas."
       }
     }
