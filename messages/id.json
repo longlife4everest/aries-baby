@@ -12,7 +12,7 @@
   "Hero": {
     "title": "Isabella Christiani Rumbewas",
     "subtitle": "Personal Branding Kreatif Isabella Christiani Rumbewas",
-    "tagline": "Mahasiswa Sistem Informasi • Antusias Sistem & Data",
+    "tagline": "Mahasiswa Sistem Informasi di Binus University | Antusias Sistem dan Data",
     "ctaProject": "Lihat Proyek",
     "ctaBlog": "Baca Blog"
   },
@@ -62,9 +62,9 @@
         "tech": "Next.js, Tailwind, Framer Motion, MDX"
       },
       "chatgpt": {
-         "title": "Prototipe Dasbor AI",
-         "description": "Dasbor optimasi energi menggunakan AI untuk memprediksi dan merekomendasikan strategi penghematan energi.",
-         "tech": "Python, Streamlit, Pandas, Scikit-learn"
+        "title": "Prototipe Dasbor AI",
+        "description": "Dasbor optimasi energi menggunakan AI untuk memprediksi dan merekomendasikan strategi penghematan energi.",
+        "tech": "Python, Streamlit, Pandas, Scikit-learn"
       }
     }
   },

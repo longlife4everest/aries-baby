@@ -12,7 +12,7 @@
   "Hero": {
     "title": "Isabella Christiani Rumbewas",
     "subtitle": "Creative Personal Branding of Isabella Christiani Rumbewas",
-    "tagline": "Information Systems Student • System & Data Enthusiast",
+    "tagline": "Information System Student at Binus University | System and Data Enthusiast",
     "ctaProject": "View Projects",
     "ctaBlog": "Read Blog"
   },
@@ -26,7 +26,7 @@
       "klinikgo": {
         "title": "System Analyst Intern",
         "company": "Klinikgo",
-        "duration": "Duration", 
+        "duration": "Duration",
         "description": "Analyzed system requirements and optimized workflow processes."
       },
       "jiu": {
@@ -62,9 +62,9 @@
         "tech": "Next.js, Tailwind, Framer Motion, MDX"
       },
       "chatgpt": {
-         "title": "AI Dashboard Prototype",
-         "description": "Energy optimization dashboard using AI to predict and recommend energy saving strategies.",
-         "tech": "Python, Streamlit, Pandas, Scikit-learn"
+        "title": "AI Dashboard Prototype",
+        "description": "Energy optimization dashboard using AI to predict and recommend energy saving strategies.",
+        "tech": "Python, Streamlit, Pandas, Scikit-learn"
       }
     }
   },
