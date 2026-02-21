@@ -8,14 +8,15 @@ import { Award, CheckCircle, X, ExternalLink } from "lucide-react";
 
 export function CertificationsGrid() {
   const t = useTranslations('Certifications.items');
-  const [selectedCert, setSelectedCert] = useState<{key: string, image?: string} | null>(null);
-  
+  const [selectedCert, setSelectedCert] = useState<{ key: string, image?: string } | null>(null);
+
   const certs = [
     { key: 'agile', image: '/images/certifications/hp-life-agile.png' },
     { key: 'data', image: '/images/certifications/revou-data-analytics.png' },
     { key: 'google', image: '/images/certifications/google-analytics.png' },
     { key: 'mis', image: '/images/certifications/klinikgo-internship.png' },
-    { key: 'python', image: '/images/certifications/pcap-python.png' }
+    { key: 'python', image: '/images/certifications/pcap-python.png' },
+    { key: 'specialSkill', image: '/images/certifications/special-skill.jpeg' }
   ];
 
   return (
@@ -35,9 +36,9 @@ export function CertificationsGrid() {
             <GlassCard hoverEffect className="h-full flex flex-col p-0 overflow-hidden border-white/40 group">
               {cert.image ? (
                 <div className="w-full h-48 bg-white/50 relative overflow-hidden">
-                  <motion.img 
+                  <motion.img
                     layoutId={`image-${cert.key}`}
-                    src={cert.image} 
+                    src={cert.image}
                     alt={t(cert.key)}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
@@ -46,16 +47,16 @@ export function CertificationsGrid() {
                   </div>
                 </div>
               ) : (
-                 <div className="w-full h-48 bg-accent/5 flex items-center justify-center relative overflow-hidden">
-                   <div className="p-4 rounded-full bg-accent/10 text-accent mb-2 scale-150 opacity-50">
-                     <Award size={32} />
-                   </div>
-                   <div className="absolute top-4 right-4 animate-fade-in">
-                      <CheckCircle className="text-green-500 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
-                   </div>
-                 </div>
+                <div className="w-full h-48 bg-accent/5 flex items-center justify-center relative overflow-hidden">
+                  <div className="p-4 rounded-full bg-accent/10 text-accent mb-2 scale-150 opacity-50">
+                    <Award size={32} />
+                  </div>
+                  <div className="absolute top-4 right-4 animate-fade-in">
+                    <CheckCircle className="text-green-500 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  </div>
+                </div>
               )}
-              
+
               <div className="p-6 flex-grow flex flex-col justify-center">
                 <h3 className="text-lg font-semibold leading-relaxed text-center group-hover:text-accent transition-colors">
                   {t(cert.key)}
@@ -86,7 +87,7 @@ export function CertificationsGrid() {
               >
                 <X size={20} />
               </button>
-              
+
               <div className="grid md:grid-cols-1 gap-0">
                 {selectedCert.image ? (
                   <div className="bg-gray-100 dark:bg-zinc-800 flex items-center justify-center">
@@ -103,10 +104,9 @@ export function CertificationsGrid() {
                     <p className="text-lg font-medium">No preview available</p>
                   </div>
                 )}
-                
+
                 <div className="p-6 bg-white dark:bg-zinc-900">
                   <h3 className="text-2xl font-bold mb-2">{t(selectedCert.key)}</h3>
-                  <p className="text-muted-foreground">Certified by HP LIFE</p>
                 </div>
               </div>
             </motion.div>

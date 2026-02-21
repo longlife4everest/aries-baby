@@ -1,7 +1,7 @@
 
 import { useTranslations } from 'next-intl';
 import { GlassCard } from "@/components/ui/GlassCard";
-import { SkillsGrid } from "@/components/layout/SkillsGrid";
+
 
 export default function About() {
   const t = useTranslations('About');
@@ -16,8 +16,6 @@ export default function About() {
           </p>
         </GlassCard>
       </section>
-
-      <SkillsGrid />
     </div>
   );
 }
