@@ -87,8 +87,7 @@ export function Hero() {
 
               {/* Circular image container */}
               <div className="relative w-full h-full rounded-full border-8 border-background/50 shadow-2xl overflow-hidden flex items-center justify-center bg-accent/20 backdrop-blur-sm">
-
-                <img src="/images/profile.png" alt="Profile" className="w-full h-full object-cover" />
+                <img src="/images/profile2.png" alt="Profile" className="w-full h-full object-cover" />
               </div>
             </div>
           </motion.div>

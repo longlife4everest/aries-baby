@@ -85,6 +85,8 @@
   },
   "Common": {
     "readMore": "Baca Selengkapnya",
-    "viewAll": "Lihat Semua"
+    "viewAll": "Lihat Semua",
+    "seeMore": "Lihat Detail",
+    "close": "Tutup"
   }
 }

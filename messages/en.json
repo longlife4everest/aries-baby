@@ -85,6 +85,8 @@
   },
   "Common": {
     "readMore": "Read More",
-    "viewAll": "View All"
+    "viewAll": "View All",
+    "seeMore": "See More",
+    "close": "Close"
   }
 }
