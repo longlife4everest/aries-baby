@@ -134,9 +134,9 @@ export function ProjectsGrid() {
               </button>
 
               {/* Left Side: Image */}
-              <motion.div layoutId={`project-image-${selectedProject.id}`} className="w-full md:w-1/2 min-h-[300px] md:min-h-full relative bg-accent/5 flex items-center justify-center overflow-hidden border-b md:border-b-0 md:border-r border-white/10">
+              <motion.div layoutId={`project-image-${selectedProject.id}`} className="w-full md:w-1/2 min-h-[300px] md:min-h-full relative bg-accent/5 flex items-center justify-center overflow-hidden border-b md:border-b-0 md:border-r border-white/10 p-4 sm:p-8">
                 {selectedProject.image ? (
-                  <img src={selectedProject.image} alt={t(`${selectedProject.id}.title`)} className="object-cover w-full h-full" />
+                  <img src={selectedProject.image} alt={t(`${selectedProject.id}.title`)} className="object-contain w-full h-full" />
                 ) : (
                   <div className="flex flex-col items-center justify-center text-accent/50">
                     <Code2 size={100} className="mb-6 opacity-50" />
