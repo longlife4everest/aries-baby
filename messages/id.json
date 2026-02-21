@@ -63,6 +63,7 @@
       "kirimcepat": {
         "title": "KirimCepat Performance Dashboard",
         "description": "Dashboard interaktif untuk menganalisis kinerja logistik, tren pendapatan, dan metrik operasional menggunakan berbagai fitur Microsoft Excel.",
+        "details": "Proyek ini menyajikan dasbor Excel interaktif yang dibangun untuk memvisualisasikan kinerja bulanan armada pengiriman lokal KirimCepat. Dasbor ini dikembangkan menggunakan PivotTable, PivotChart, Slicer, Sparkline, dan Conditional Formatting untuk mendukung pemantauan operasional dan pengambilan keputusan.",
         "tech": "Microsoft Excel, PivotTable, PivotChart, Slicer (Area & Month filter), Sparkline (Revenue & Shipment trends), Conditional Formatting (Performance indicators), Insight Textbox for business interpretation"
       },
       "chatgpt": {

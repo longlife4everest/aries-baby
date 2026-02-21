@@ -134,9 +134,9 @@ export function ProjectsGrid() {
               </button>
 
               {/* Left Side: Image */}
-              <motion.div layoutId={`project-image-${selectedProject.id}`} className="w-full md:w-1/2 min-h-[300px] md:min-h-full relative bg-accent/5 flex items-center justify-center p-8">
+              <motion.div layoutId={`project-image-${selectedProject.id}`} className="w-full md:w-1/2 min-h-[300px] md:min-h-full relative bg-accent/5 flex items-center justify-center overflow-hidden border-b md:border-b-0 md:border-r border-white/10">
                 {selectedProject.image ? (
-                  <img src={selectedProject.image} alt={t(`${selectedProject.id}.title`)} className="object-cover w-full h-full rounded-2xl shadow-lg" />
+                  <img src={selectedProject.image} alt={t(`${selectedProject.id}.title`)} className="object-cover w-full h-full" />
                 ) : (
                   <div className="flex flex-col items-center justify-center text-accent/50">
                     <Code2 size={100} className="mb-6 opacity-50" />
@@ -160,10 +160,16 @@ export function ProjectsGrid() {
                 </div>
 
                 <div className="prose dark:prose-invert prose-p:leading-relaxed prose-p:text-muted-foreground prose-a:text-accent prose-a:no-underline hover:prose-a:underline mb-8 flex-grow">
-                  <p>{t(`${selectedProject.id}.description`)}</p>
-                  <p className="mt-4">
-                    Wait for an upcoming detailed update regarding the features, architecture, and journey of creating this project. When it's ready, those details will appear right here!
-                  </p>
+                  {selectedProject.id === 'kirimcepat' ? (
+                    <p>{t(`${selectedProject.id}.details`)}</p>
+                  ) : (
+                    <>
+                      <p>{t(`${selectedProject.id}.description`)}</p>
+                      <p className="mt-4">
+                        Wait for an upcoming detailed update regarding the features, architecture, and journey of creating this project. When it's ready, those details will appear right here!
+                      </p>
+                    </>
+                  )}
                 </div>
 
                 {/* Modal Action Buttons */}
