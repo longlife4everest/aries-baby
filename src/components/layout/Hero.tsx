@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Linkedin, Mail, Github } from "lucide-react";
+import { Linkedin, Mail, Github, Instagram } from "lucide-react";
 
 export function Hero() {
   const t = useTranslations("Hero");
@@ -35,14 +35,14 @@ export function Hero() {
       <motion.div style={{ y: y1 }} className="absolute top-1/3 right-1/4 w-96 h-96 bg-purple-200/20 rounded-full blur-3xl mix-blend-multiply filter animate-blob animation-delay-2000" />
 
       <div className="container relative z-10 px-6">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-12 md:gap-8">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-12 lg:gap-20">
 
           {/* Left Column: Text Content */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="flex-1 space-y-6 text-center md:text-left"
+            className="w-full max-w-xl space-y-6 text-center md:text-left"
           >
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-foreground">
               {t("title")}
@@ -67,14 +67,10 @@ export function Hero() {
                 <a href="https://github.com/rumbewasisabella" target="_blank" rel="noopener noreferrer" className="p-3 bg-background hover:bg-accent/10 border border-border rounded-full transition-colors text-foreground hover:text-accent shadow-sm">
                   <Github size={24} />
                 </a>
+                <a href="https://www.instagram.com/isabellarumbewas/" target="_blank" rel="noopener noreferrer" className="p-3 bg-background hover:bg-accent/10 border border-border rounded-full transition-colors text-foreground hover:text-accent shadow-sm">
+                  <Instagram size={24} />
+                </a>
               </div>
-            </div>
-
-            <div className="h-8 mt-6 hidden md:block">
-              <p className="text-sm text-muted-foreground font-mono">
-                {text}
-                <span className="animate-pulse">|</span>
-              </p>
             </div>
           </motion.div>
 
@@ -83,7 +79,7 @@ export function Hero() {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex-1 flex justify-center md:justify-center w-full md:-ml-12"
+            className="w-full max-w-lg flex justify-center"
           >
             <div className="relative w-72 h-72 sm:w-96 sm:h-96 md:w-[28rem] md:h-[28rem] lg:w-[32rem] lg:h-[32rem]">
               {/* Soft glow behind the image */}
