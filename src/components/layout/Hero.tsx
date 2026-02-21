@@ -3,9 +3,9 @@
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { Button } from "@/components/ui/Button";
+
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Linkedin, Mail, User } from "lucide-react";
+import { Linkedin, Mail, Github } from "lucide-react";
 
 export function Hero() {
   const t = useTranslations("Hero");
@@ -57,17 +57,15 @@ export function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 pt-4">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground rounded-md px-8 py-6 text-lg font-medium transition-all shadow-md">
-                  {t("ctaResume")}
-                </Button>
-              </a>
-              <div className="flex items-center gap-4 ml-0 sm:ml-4">
+              <div className="flex items-center gap-4">
                 <a href="https://www.linkedin.com/in/isabellachristianirumbewas-661201312/" target="_blank" rel="noopener noreferrer" className="p-3 bg-background hover:bg-accent/10 border border-border rounded-full transition-colors text-foreground hover:text-accent shadow-sm">
                   <Linkedin size={24} />
                 </a>
                 <a href="mailto:rumbewas.isabella@gmail.com" className="p-3 bg-background hover:bg-accent/10 border border-border rounded-full transition-colors text-foreground hover:text-accent shadow-sm">
                   <Mail size={24} />
+                </a>
+                <a href="https://github.com/rumbewasisabella" target="_blank" rel="noopener noreferrer" className="p-3 bg-background hover:bg-accent/10 border border-border rounded-full transition-colors text-foreground hover:text-accent shadow-sm">
+                  <Github size={24} />
                 </a>
               </div>
             </div>
@@ -92,15 +90,9 @@ export function Hero() {
               <div className="absolute inset-0 bg-accent/20 rounded-full blur-2xl animate-pulse"></div>
 
               {/* Circular image container */}
-              <div className="relative w-full h-full rounded-full border-8 border-background/50 shadow-2xl overflow-hidden flex items-center justify-center bg-gradient-to-br from-accent/40 to-accent/80 backdrop-blur-sm">
+              <div className="relative w-full h-full rounded-full border-8 border-background/50 shadow-2xl overflow-hidden flex items-center justify-center bg-accent/20 backdrop-blur-sm">
 
-                {/* Fallback avatar icon */}
-                <User size={120} className="text-accent-foreground/50" />
-
-                {/* 
-                  When ready, the user can replace the User icon with an Image tag like below:
-                  <img src="/images/profile.jpg" alt="Profile" className="w-full h-full object-cover" />
-                */}
+                <img src="/images/profile.png" alt="Profile" className="w-full h-full object-cover" />
               </div>
             </div>
           </motion.div>
