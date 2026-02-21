@@ -66,10 +66,11 @@
         "details": "Proyek ini menyajikan dasbor Excel interaktif yang dibangun untuk memvisualisasikan kinerja bulanan armada pengiriman lokal KirimCepat. Dasbor ini dikembangkan menggunakan PivotTable, PivotChart, Slicer, Sparkline, dan Conditional Formatting untuk mendukung pemantauan operasional dan pengambilan keputusan.",
         "tech": "Microsoft Excel, PivotTable, PivotChart, Slicer (Area & Month filter), Sparkline (Revenue & Shipment trends), Conditional Formatting (Performance indicators), Insight Textbox for business interpretation"
       },
-      "chatgpt": {
-        "title": "Prototipe Dasbor AI",
-        "description": "Dasbor optimasi energi menggunakan AI untuk memprediksi dan merekomendasikan strategi penghematan energi.",
-        "tech": "Python, Streamlit, Pandas, Scikit-learn"
+      "digitalclinic": {
+        "title": "Desain Sistem Registrasi Klinik Digital",
+        "description": "Proyek analisis dan desain sistem untuk sistem registrasi pasien online, mencakup Flowchart, DFD Level 0, Use Case, Activity, dan Sequence Diagram untuk mendukung layanan kesehatan digital.",
+        "details": "Sorotan Kebutuhan Bisnis:\n• Registrasi online untuk pasien baru dan lama\n• Pemilihan jadwal dokter\n• Notifikasi WhatsApp/email untuk konfirmasi dan perubahan jadwal\n• Pembuatan bukti registrasi online\n• Penetapan nomor antrean berdasarkan urutan pendaftaran\n• Alur registrasi ulang yang berbeda untuk pasien BPJS dan non-BPJS",
+        "tech": "Analisis Sistem, Flowchart, DFD Level 0, Use Case Diagram, Activity Diagram, Sequence Diagram"
       }
     }
   },

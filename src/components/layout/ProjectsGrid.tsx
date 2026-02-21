@@ -29,9 +29,9 @@ export function ProjectsGrid() {
       demo: '#'
     },
     {
-      id: 'chatgpt',
-      image: '',
-      github: 'https://github.com/rumbewasisabella',
+      id: 'digitalclinic',
+      image: '/images/projects/digital-clinic.png',
+      github: 'https://github.com/rumbewasisabella/digital-clinic-registration-system-design.git',
       demo: '#'
     }
   ];
@@ -160,8 +160,8 @@ export function ProjectsGrid() {
                 </div>
 
                 <div className="prose dark:prose-invert prose-p:leading-relaxed prose-p:text-muted-foreground prose-a:text-accent prose-a:no-underline hover:prose-a:underline mb-8 flex-grow">
-                  {selectedProject.id === 'kirimcepat' ? (
-                    <p>{t(`${selectedProject.id}.details`)}</p>
+                  {selectedProject.id === 'kirimcepat' || selectedProject.id === 'digitalclinic' ? (
+                    <p className="whitespace-pre-line">{t(`${selectedProject.id}.details`)}</p>
                   ) : (
                     <>
                       <p>{t(`${selectedProject.id}.description`)}</p>

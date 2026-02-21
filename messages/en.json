@@ -66,10 +66,11 @@
         "details": "This project presents an interactive Excel dashboard built to visualize the monthly performance of KirimCepat's local delivery fleet. The dashboard was developed using PivotTable, PivotChart, Slicer, Sparkline, and Conditional Formatting to support operational monitoring and decision-making.",
         "tech": "Microsoft Excel, PivotTable, PivotChart, Slicer (Area & Month filter), Sparkline (Revenue & Shipment trends), Conditional Formatting (Performance indicators), Insight Textbox for business interpretation"
       },
-      "chatgpt": {
-        "title": "AI Dashboard Prototype",
-        "description": "Energy optimization dashboard using AI to predict and recommend energy saving strategies.",
-        "tech": "Python, Streamlit, Pandas, Scikit-learn"
+      "digitalclinic": {
+        "title": "Digital Clinic Registration System Design",
+        "description": "System analysis and design project for an online patient registration system, including Flowchart, DFD Level 0, Use Case, Activity, and Sequence Diagrams to support digital healthcare services.",
+        "details": "Business Requirements Highlights:\n• Online registration for new and existing patients\n• Doctor schedule selection\n• WhatsApp/email notification for confirmation and schedule changes\n• Online registration proof generation\n• Queue number assignment based on registration order\n• Different re-registration flows for BPJS and non-BPJS patients",
+        "tech": "System Analysis, Flowchart, DFD Level 0, Use Case Diagram, Activity Diagram, Sequence Diagram"
       }
     }
   },
