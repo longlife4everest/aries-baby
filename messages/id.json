@@ -60,10 +60,10 @@
   "Projects": {
     "title": "Proyek Unggulan",
     "items": {
-      "ariesbaby": {
-        "title": "AriesBaby - Personal Branding",
-        "description": "Situs web personal branding premium yang dibangun dengan Next.js, Tailwind CSS, Framer Motion, dan MDX. Dirancang untuk memamerkan pengalaman, sertifikasi, dan konten blog dengan estetika pink lembut yang futuristik.",
-        "tech": "Next.js, Tailwind, Framer Motion, MDX"
+      "kirimcepat": {
+        "title": "KirimCepat Performance Dashboard",
+        "description": "Dashboard interaktif untuk menganalisis kinerja logistik, tren pendapatan, dan metrik operasional menggunakan berbagai fitur Microsoft Excel.",
+        "tech": "Microsoft Excel, PivotTable, PivotChart, Slicer (Area & Month filter), Sparkline (Revenue & Shipment trends), Conditional Formatting (Performance indicators), Insight Textbox for business interpretation"
       },
       "chatgpt": {
         "title": "Prototipe Dasbor AI",

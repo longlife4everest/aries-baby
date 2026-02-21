@@ -23,9 +23,9 @@ export function ProjectsGrid() {
   // Here you can easily add more projects simply by adding the id and configuring the translations in en.json and id.json
   const projects: Project[] = [
     {
-      id: 'ariesbaby',
-      image: '', // e.g. '/images/projects/ariesbaby.jpg' (leave empty to show cool placeholder)
-      github: 'https://github.com/rumbewasisabella/aries-baby',
+      id: 'kirimcepat',
+      image: '/images/projects/kirimcepat.png',
+      github: 'https://github.com/rumbewasisabella/kirimcepat-performance-dashboard.git',
       demo: '#'
     },
     {
@@ -96,11 +96,7 @@ export function ProjectsGrid() {
                     <span>{common('seeMore')}</span>
                     <ArrowRight size={18} />
                   </Button>
-                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex-[0.5] sm:flex-none">
-                    <Button variant="ghost" size="icon" className="w-12 h-12 rounded-xl hover:bg-accent/10 hover:text-accent border border-border transition-colors" title="Source Code">
-                      <Github size={20} />
-                    </Button>
-                  </a>
+
                   {project.demo !== '#' && (
                     <a href={project.demo} target="_blank" rel="noopener noreferrer" className="flex-[0.5] sm:flex-none">
                       <Button size="icon" className="w-12 h-12 rounded-xl bg-accent hover:bg-accent/90 text-primary-foreground shadow-md transition-all" title="Live Demo">

@@ -60,10 +60,10 @@
   "Projects": {
     "title": "Featured Projects",
     "items": {
-      "ariesbaby": {
-        "title": "AriesBaby - Personal Branding",
-        "description": "A premium personal branding website built with Next.js, Tailwind CSS, Framer Motion, and MDX. Designed to showcase experience, certifications, and blog content with a futuristic soft pink aesthetic.",
-        "tech": "Next.js, Tailwind, Framer Motion, MDX"
+      "kirimcepat": {
+        "title": "KirimCepat Performance Dashboard",
+        "description": "An interactive dashboard for analyzing logistics performance, revenue trends, and operational metrics utilizing Microsoft Excel features.",
+        "tech": "Microsoft Excel, PivotTable, PivotChart, Slicer (Area & Month filter), Sparkline (Revenue & Shipment trends), Conditional Formatting (Performance indicators), Insight Textbox for business interpretation"
       },
       "chatgpt": {
         "title": "AI Dashboard Prototype",

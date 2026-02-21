@@ -16,7 +16,7 @@ export function CertificationsGrid() {
     { key: 'google', image: '/images/certifications/google-analytics.png' },
     { key: 'mis', image: '/images/certifications/klinikgo-internship.png' },
     { key: 'python', image: '/images/certifications/pcap-python.png' },
-    { key: 'specialSkill', image: '/images/certifications/special-skill.jpeg' }
+    { key: 'specialSkill', image: '/images/certifications/special-skill.png' }
   ];
 
   return (
