@@ -10,7 +10,10 @@
     "switcher": "EN"
   },
   "Hero": {
-    "title": "Isabella Christiani Rumbewas",
+    "title": "Isabella Rumbewas",
+    "role": "PENGGEMAR SISTEM & DATA",
+    "description": "Saat ini saya adalah mahasiswa Sistem Informasi di Binus University. Saya memiliki keahlian dalam Python, Java, SQL, dan analisis data. Anda dapat melihat proyek pribadi saya atau mengunduh resumenya di bawah ini.",
+    "ctaResume": "UNDUH RESUME",
     "subtitle": "Personal Branding Kreatif Isabella Christiani Rumbewas",
     "tagline": "Mahasiswa Sistem Informasi di Binus University | Antusias Sistem dan Data",
     "ctaProject": "Lihat Proyek",

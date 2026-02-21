@@ -10,7 +10,10 @@
     "switcher": "ID"
   },
   "Hero": {
-    "title": "Isabella Christiani Rumbewas",
+    "title": "Isabella Rumbewas",
+    "role": "SYSTEM & DATA ENTHUSIAST",
+    "description": "I'm currently an Information Systems student at Binus University. I have skills in Python, Java, SQL, and data analysis. You can view my personal projects or download my resume below.",
+    "ctaResume": "DOWNLOAD RESUME",
     "subtitle": "Creative Personal Branding of Isabella Christiani Rumbewas",
     "tagline": "Information System Student at Binus University | System and Data Enthusiast",
     "ctaProject": "View Projects",
