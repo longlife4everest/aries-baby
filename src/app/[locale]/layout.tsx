@@ -5,7 +5,13 @@ import "../globals.css";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
-
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
+import { CustomCursor } from "@/components/ui/CustomCursor";
+import { ScrollToTop } from "@/components/ui/ScrollToTop";
+import { NowPlaying } from "@/components/ui/NowPlaying";
+import { PageTransition } from "@/components/layout/PageTransition";
+import { routing } from '@/i18n/routing';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -47,15 +53,16 @@ export default async function LocaleLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}>
         <NextIntlClientProvider messages={messages}>
           <Preloader />
-          <div className="flex flex-col min-h-screen items-center justify-center">
-            <main className="flex-grow flex flex-col items-center justify-center px-4 text-center space-y-6">
-              <h1 className="text-4xl md:text-6xl font-bold tracking-tighter">
-                We&apos;ll be back soon!
-              </h1>
-              <p className="text-lg text-muted-foreground max-w-[600px] mx-auto">
-                Sorry for the inconvenience but we&apos;re performing some maintenance at the moment. We&apos;ll be back online shortly!
-              </p>
+          <CustomCursor />
+          <ScrollToTop />
+          <div className="flex flex-col min-h-screen">
+            <Navbar locale={locale} />
+            <main className="flex-grow pt-20 pb-10">
+              <PageTransition>
+                {children}
+              </PageTransition>
             </main>
+            <Footer />
           </div>
         </NextIntlClientProvider>
       </body>
